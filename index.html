@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pawmart - Pet Care Services</title>
+    <link rel="stylesheet" href="pawmart.css">
+    <script src="https://kit.fontawesome.com/435e4bf4f6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div id="homepage">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span>Paw</span>mart.</h1>
+                <ul>
+                    <li><a href="#homepage">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portofolio">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h2>Welcome to Pawmart!</h2>
+                <p>Your Trusted Partner for Pet Care Services</p>
+                <!-- <div class="cta-button">
+                    <form>
+                        <input type="submit" name="submit" value="Book a Service">
+                    </form>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <!-- <img src="images/pet-care.jpg" alt="Pet Care"> -->
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Pawmart</h1>
+                    <p>
+                        At Pawmart, we believe that every pet deserves the best care possible. Our dedicated team of pet
+                        care specialists ensures that your furry friends receive love, attention, and professional
+                        services. Whether it's grooming, pet sitting, or veterinary care, we are here to make sure your
+                        pets are happy and healthy!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Our Mission</p>
+                        <p class="tab-links" onclick="opentab('experience')">Why Choose Us</p>
+                        <!-- <p class="tab-links" onclick="opentab('education')">Our Team</p> -->
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <li><span>Compassionate Care:</span> We treat your pets as if they were our own.</li>
+                        <li><span>Expert Staff:</span> Highly trained professionals with years of experience.</li>
+                        <li><span>Affordable Pricing:</span> Quality services at reasonable prices.</li>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <li>Trusted by hundreds of pet owners</li>
+                        <li>Experienced with a variety of animals, from dogs and cats to exotic pets</li>
+                        <li>State-of-the-art facilities</li>
+                    </div>
+                    <!-- <div class="tab-contents" id="education">
+                        <li><span>Dr. John Smith:</span> Head Veterinarian with over 10 years of experience</li>
+                        <li><span>Sara Wong:</span> Certified Pet Groomer and Trainer</li>
+                        <li><span>Michael Brown:</span> Professional Pet Sitter with a passion for animals</li>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Our Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-paw"></i>
+                    <h2>Grooming</h2>
+                    <p>Our professional grooming services include baths, haircuts, nail trims, and ear cleaning for your
+                        pets. Let us pamper your furry friends!</p>
+                    <a href="grooming.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-heart"></i>
+                    <h2>Pet Sitting</h2>
+                    <p>Going away? Our pet sitting services ensure your pets are cared for while you're gone. We offer
+                        daily visits or overnight stays.</p>
+                    <a href="sitting.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-stethoscope"></i>
+                    <h2>Veterinary Services</h2>
+                    <p>Our in-house veterinary team offers a full range of health services, from routine check-ups to
+                        emergency care.</p>
+                    <a href="vet.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-shopping-cart"></i>
+                    <h2>Online Pet Shop</h2>
+                    <p>Explore our wide range of pet products, from food to toys, available for online purchase with doorstep delivery.</p>
+                    <a href="online_shop.html">Shop Now</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div id="portofolio">
+        <div class="container">
+            <h1 class="sub-title">Our Gallery</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="bg_groom.jpg">
+                    <div class="layer">
+                        <h3>Pet Grooming</h3>
+                        <p>See how we pamper your pets!</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="bg_petsitting.jpg">
+                    <div class="layer">
+                        <h3>Pet Sitting</h3>
+                        <p>Happy pets while you're away.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="bg_vet.jpg">
+                    <div class="layer">
+                        <h3>Veterinary Care</h3>
+                        <p>Professional care for your pet's health.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Us</h1>
+                    <p><i class="fa-solid fa-envelope"></i> pawmartservices@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +62 812 3456 7890</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://id-id.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.whatsapp.com/?lang=id"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
+ 

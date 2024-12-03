@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop - Pawmart</title>
+    <link rel="stylesheet" href="online_shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Pawmart Online Shop</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="grooming.html">Pet Grooming</a>
+                <a href="sitting.html">Pet Sitting</a>
+                <a href="vet.html">Veterinary Care</a>
+                <a href="online_shop.html" class="active">Online Shop</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Shop for Your Pets</h2>
+            <p>Quality products for your furry friends at affordable prices.</p>
+        </div>
+    </section>
+
+    <!-- Search Bar Section -->
+    <section class="search-section">
+        <div class="container">
+            <input type="text" id="search" placeholder="Search for products..." onkeyup="searchProducts()">
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-list" id="productList">
+                <div class="product">
+                    <img src="dog_food.jpg" alt="Dog Food">
+                    <h3>Dog Food</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span class="price">Rp.200.000</span>
+                    <a href="#" class="btn" onclick="addToCart('Dog Food')">Add to Cart</a>
+                </div>
+                <div class="product">
+                    <img src="cat_toy.jpg" alt="Cat Toy">
+                    <h3>Cat Toy</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span class="price">Rp.75.000</span>
+                    <a href="#" class="btn" onclick="addToCart('Cat Toy')">Add to Cart</a>
+                </div>
+                <div class="product">
+                    <img src="dog_bedd.jpeg" alt="Dog Bed">
+                    <h3>Dog Bed</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span class="price">Rp.250.000</span>
+                    <a href="#" class="btn" onclick="addToCart('Dog Bed')">Add to Cart</a>
+                </div>
+                <div class="product">
+                    <img src="cat_food.jpeg" alt="Cat Food">
+                    <h3>Cat Food</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span class="price">Rp.150.000</span>
+                    <a href="#" class="btn" onclick="addToCart('Cat Food')">Add to Cart</a>
+                </div>
+                <div class="product">
+                    <img src="dog_collar.jpeg" alt="Dog Collar">
+                    <h3>Dog Collar</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span class="price">Rp.60.000</span>
+                    <a href="#" class="btn" onclick="addToCart('Dog Collar')">Add to Cart</a>
+                </div>
+                <!-- <div class="product">
+                    <img src="/pict/product6.jpg" alt="Cat Litter">
+                    <h3>Cat Litter</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span class="price">Rp.45.000</span>
+                    <a href="#" class="btn" onclick="addToCart('Cat Litter')">Add to Cart</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pawmart. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function addToCart(productName) {
+            alert(productName + " has been added to your cart!");
+        }
+
+        function searchProducts() {
+            const input = document.getElementById('search').value.toLowerCase();
+            const products = document.querySelectorAll('.product');
+            
+            products.forEach(product => {
+                const productName = product.querySelector('h3').innerText.toLowerCase();
+                if (productName.includes(input)) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
